@@ -1,0 +1,8 @@
+@font-face {
+    font-family:"NotoKufiArabic";
+    src: url('NotoKufiArabic-VariableFont_wght.eot') format('embedded-opentype'),
+        url("NotoKufiArabic-VariableFont_wght.otf")format('otf'),
+        url("NotoKufiArabic-VariableFont_wght.ttf")format("truetype"),
+        url("NotoKufiArabic-VariableFont_wght.woff")format("woff"),
+        url("NotoKufiArabic-VariableFont_wght.woff2")format("woff2");
+}

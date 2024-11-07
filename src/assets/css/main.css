@@ -1,0 +1,9 @@
+@import "custom-style.css";
+@import "components/footer.css";
+@import "components/header.css";
+@import "components/buttons.css";
+@import "components/cards.css";
+@import "components/forms.css";
+@import "components/navs.css";
+@import "fonts/fonts.css";
+@import "theme-variables.css";

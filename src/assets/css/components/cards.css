@@ -1,0 +1,54 @@
+.prs-advantages-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--body-ff);
+    gap: 32px;
+    text-align: center;
+    margin-bottom: 45px;
+    padding: 24px;
+    background: white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: 1s all linear;
+}
+.prs-advantages-card .prs-icon-wrapper{
+    width: 72px;
+    height: 72px;
+    border: 1px solid var(--prs-light-gary-clr);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prs-advantages-card .text-wrapper{
+
+}
+.prs-advantages-card .text-wrapper .prs-card-title{
+    color:var(--prs-black-clr);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.prs-advantages-card .text-wrapper .prs-card-desc{
+    color:var(--prs-gary-clr);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    max-width: 325px;
+}
+/*hover*/
+.prs-advantages-card:hover{
+    background: #F0F3E899;
+    border-color: var(--prs-secondary-clr);
+}
+.prs-advantages-card:hover .prs-icon-wrapper{
+    background: var(--prs-secondary-clr);
+    border-color: var(--prs-primary-clr);
+}
+.prs-advantages-card:hover .text-wrapper .prs-card-title{
+    color: var(--prs-primary-clr);
+}
+.prs-advantages-card:hover .text-wrapper .prs-card-desc{
+    color: var(--prs-secondary-clr);
+}

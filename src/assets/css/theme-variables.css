@@ -1,0 +1,32 @@
+:root{
+    /*--font family--*/
+    --body-ff:"NotoKufiArabic", sans-serif;
+    --prs-body-bg-clr:var(--prs-white-clr);
+    /*--COLORS--*/
+    --prs-primary-clr:#1A4220;
+    --prs-secondary-clr:#B4CC74;
+    --prs-black-clr:#292D32;
+    --prs-white-clr:#fff;
+    --prs-gary-clr:#777A8B;
+    --prs-light-gary-clr:#DFE2E6;
+    --prs-light-gary-clr-bg:#1A42200F;
+    --prs-dark-gary-clr:#444444;
+
+
+
+
+
+
+
+
+    /*--prs-light-secondary-clr:#F4FAFF;*/
+    /*--prs-danger-clr:#E36D6D;*/
+    /*--prs-success-clr:#34A754;*/
+    /*--prs-light-gary-clr-1:#D4D8DC;*/
+    /*--prs-light-blue-clr:#EAF5FF;*/
+    /*--prs-dark-blue-clr:#7FA1C0;*/
+    /*--prs-dark-clr:#0A141D;*/
+    /*--prs-light-dark-clr:#131F2A;*/
+  }
+
+

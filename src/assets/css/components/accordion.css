@@ -1,0 +1,32 @@
+.accordion.prs-accordion{
+    font-family: var(--body-ff);
+}
+.accordion.prs-accordion.accordion-flush> .accordion-item{
+    border-block: 1px solid var(--prs-light-gary-clr);
+}
+.accordion.prs-accordion.accordion-flush .accordion-button::after {
+    margin-inline-start: auto;    margin-left: 0;
+    --bs-accordion-btn-icon:url("/assets/media/iconS/add-square.svg");
+    --bs-accordion-btn-active-icon:url("/assets/media/iconS/minus-square.svg")
+}
+.accordion.prs-accordion .accordion-button {
+    padding: 32px 0;
+    font-size: 24px;
+    color:var(--prs-black-clr);
+    line-height: 56px;
+    font-weight: 700;
+}
+.accordion.prs-accordion .accordion-header{}
+.accordion.prs-accordion .accordion-body{
+    color:var(--prs-gary-clr);
+    font-size: 18px;
+    line-height: 27px;
+    padding:  0 0 32px 0;
+}
+.accordion.prs-accordion .accordion-button:not(.collapsed){
+    background-color: var(--prs-white-clr);
+    box-shadow: none;
+}
+.accordion.prs-accordion .accordion-button:focus,
+.accordion.prs-accordion .accordion-button:focus-within,
+.accordion.prs-accordion .accordion-button:focus-visible {box-shadow: none;}

@@ -142,6 +142,8 @@ body{
     }
     .prs-download-app-wrapper .prs-download-app-img-wrapper img{transform: translate(0, -17%);}
 }
+
+/*- contact form-*/
 .prs-contact-form-wrapper{
     position: relative;
     z-index: 22;
@@ -181,3 +183,5 @@ body{
     max-width: 320px;
 }
 .prs-contact-form-input-wrapper{margin-top: 45px;}
+/*--FQA--*/
+

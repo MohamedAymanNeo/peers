@@ -142,3 +142,42 @@ body{
     }
     .prs-download-app-wrapper .prs-download-app-img-wrapper img{transform: translate(0, -17%);}
 }
+.prs-contact-form-wrapper{
+    position: relative;
+    z-index: 22;
+    margin-top: 130px;
+}
+.prs-contact-form-wrapper:before{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+    left:0;
+    display: block;
+    content: '';
+    background-color: var(--prs-footer-bg);
+    z-index: 0;
+}
+.prs-contact-form{
+    position: relative;
+    z-index: 444;
+    background-color: var(--prs-secondary-clr);
+    border-radius: 30px;
+    padding: 45px;
+    color:var(--prs-white-clr);
+    min-height: 210px;
+    align-items: center;
+}
+.prs-contact-form .prs-contact-form-text-wrapper .prs-contact-form-title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.prs-contact-form .prs-contact-form-text-wrapper .prs-contact-form-desc{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    max-width: 320px;
+}
+.prs-contact-form-input-wrapper{margin-top: 45px;}

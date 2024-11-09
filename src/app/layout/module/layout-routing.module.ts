@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from '../layout.component';
+import { PrivacyComponent } from '../controls/links/privacy/privacy.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,13 @@ const routes: Routes = [
           import('../../home/module/home.module').then((m) => m.HomeModule),
 
       },
+      {
+        path: 'pages',
+        loadChildren: () =>
+          import('../controls/links/module/links.module').then((m) => m.LinksModule),
+
+      },
+      
     ]}
     
 ];

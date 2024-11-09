@@ -1,11 +1,12 @@
 import { CommonModule } from "@angular/common";
-import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from "@angular/common/http";
 import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 import { environment } from "src/environments/environment";
 import { SharedModule } from "./shared.module";
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgModule } from "@angular/core";
 import { TranslationService } from "./translation/translation.service";
+import { HttpConfigInterceptor } from "./interceptors/http/http-config.interceptor";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
@@ -39,7 +40,13 @@ function getAppConfig()  {
 
   ],
   providers:[
-    TranslationService
+    TranslationService,
+    // http interceptor
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HttpConfigInterceptor,
+      multi: true,
+    },
   ],
   declarations: [
     

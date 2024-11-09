@@ -1,0 +1,36 @@
+<div class="container prs-header-container">
+    <nav class="navbar prs-header navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/media/SVGs/logo-header.svg" alt="Peers Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-links">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">{{'header.home' | translate }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">{{'header.aboutPeers' | translate }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">{{'header.advantages' | translate }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">{{'header.faq' | translate }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">{{'header.contactUs' | translate }}</a>
+                    </li>
+                </ul>
+                <div class="prs-header-action">
+                    <button class="btn prs-btn prs-btn-outline-gray" (click)="toggleLang()">E</button>
+                    <button class="btn prs-btn prs-btn-primary">{{'header.home' | translate }}</button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</div>

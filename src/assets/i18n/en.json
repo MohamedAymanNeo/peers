@@ -1,0 +1,27 @@
+{
+  "TRANSLATOR": {
+    "LANGUAGE": "العربية"
+  },
+  "header":{
+    "home":"Home",
+    "aboutPeers":"About Peers",
+    "advantages":"Advantages",
+    "faq":"FAQ",
+    "contactUs":"Contact us",
+    "getApp":"Get the app now"
+  },
+  "footer": {
+    "terms": "Terms and Conditions",
+    "privacyPolicy": "privacy policy",
+    "aboutPeers": "About Peers",
+    "footerText": "Our platform combines shopping and social networking for an innovative and seamless shopping experience. Explore, interact, and buy"
+  },
+  "about":{
+    "aboutText":"We are committed to providing a distinguished experience that combines comfort and social interaction"
+  },
+  "download":{
+    "downloadTitle":"Turn every click into a new discovery!",
+    "downloadDesc":"Join now a different shopping world, where every click becomes an opportunity to discover new products and services. Start your journey today!"
+  }
+  
+}

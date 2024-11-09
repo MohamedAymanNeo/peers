@@ -1,0 +1,79 @@
+<!--FQA-->
+<div class="container prs-fqa-wrapper mt-4">
+    <div class="prs-title-wrapper">
+        <h2 class="prs-title">الأسئلة الشائعة</h2>
+        <p class="prs-subtitle">الإجابات على الأسئلة الأكثر شيوعاً حول استخدام التطبيق</p>
+    </div>
+    <div class="accordion prs-accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item" *ngFor="let question of arr">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#'+question.number" aria-expanded="false" [attr.aria-controls]="question.number">
+                   {{question.question}}
+                </button>
+            </h2>
+            <div [id]="question.number" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    {{question.answer}}
+                </div>
+            </div>
+        </div>
+        <!-- <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    كيف أسجل في التطبيق؟
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    يمكنك التسجيل من خلال رقم الجوال أو باستخدام بريدك الإلكتروني ثم اتبع الخطوات الموضحة على الشاشة لإكمال التسجيل.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    كيف يمكنني تتبع طلبي؟
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> كيف يمكنني تتبع طلبي؟</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+هل يمكنني إرجاع منتج قمت بشرائه؟
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+هل يمكنني إرجاع منتج قمت بشرائه؟
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                    كيف يمكنني الإتصال بفريق الدعم؟
+                </button>
+            </h2>
+            <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    كيف يمكنني الإتصال بفريق الدعم؟
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                    ما هي طرق الدفع المتاحة؟
+                </button>
+            </h2>
+            <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    ما هي طرق الدفع المتاحة؟
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>

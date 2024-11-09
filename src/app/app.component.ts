@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TranslationService } from './shared/translation/translation.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'peers';
+  constructor() {
+  }
+  
 }

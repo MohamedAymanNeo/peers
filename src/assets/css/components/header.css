@@ -71,6 +71,7 @@
         background: var(--prs-secondary-clr);
         border-radius: 8px;
         align-items: flex-start;
+        z-index: 444444;
     }
     .prs-header .navbar-links {
         flex-direction: column;

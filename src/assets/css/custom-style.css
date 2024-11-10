@@ -185,7 +185,7 @@ body{
     position: absolute;
     inset-inline-start: 70px;
     bottom: -30px;
-    transform: rotate(8deg);
+    /*transform: rotate(8deg);*/
 }
 .prs-hero-section-container .prs-hero-btn{
     width: 57px;
@@ -261,6 +261,52 @@ body{
 .prs-about-wrapper{
     background-color: var(--prs-light-gary-clr-bg);
 }
+.prs-about-wrapper .prs-carousel-container{
+    position: relative;
+    /*background-color:var(--prs-light-gary-clr-bg);*/
+}
+.prs-about-wrapper .prs-carousel-container:after{
+    position: absolute;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: calc(50% - 30px);
+    height: 70%;
+    background:  linear-gradient(270deg, #B4CC74 0%, rgba(180, 204, 116, 0) 100%);
+    z-index: -1;
+}
+.prs-about-wrapper .prs-carousel-img-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+}
+.prs-about-wrapper .prs-carousel-img-wrapper img{
+    width: 80%;
+}
+@media (max-width: 767px) {
+    .prs-about-wrapper .prs-carousel-container:after{
+        display: none;
+    }
+    .prs-about-wrapper .prs-carousel-img-wrapper:after{
+        position: absolute;
+        bottom: 0;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 90%;
+        background:  linear-gradient(270deg, #B4CC74 0%, rgba(180, 204, 116, 0) 100%);
+        z-index: -1;
+    }
+    .prs-about-wrapper .prs-carousel-img-wrapper{width: 100%}
+    .prs-about-wrapper .prs-carousel-img-wrapper img{width: fit-content}
+    .prs-carousel-container .container{max-width: fit-content;}
+    .prs-carousel-container .container .row>:first-child {padding-inline: 0}
+    .prs-about-wrapper .prs-carousel-img-wrapper {justify-content: center;}
+
+}
+
 /*--Download app--*/
 .prs-download-app-wrapper{
     background: linear-gradient(83.16deg, rgba(180, 204, 116, 0.8) 0%, rgba(26, 66, 32, 0.8) 99.76%);

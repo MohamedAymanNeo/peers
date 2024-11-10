@@ -1,0 +1,74 @@
+.prs-carousel{}
+.prs-carousel .carousel-inner{}
+.prs-carousel .carousel-inner .carousel-item{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 77px 14px 8rem 14px;
+}
+.prs-carousel .carousel-item .prs-carousel-title{
+    font-size: 24px;font-weight: 600;
+    line-height: 36px;color: var(--prs-primary-clr);
+}
+.prs-carousel .carousel-item .prs-carousel-desc{
+    font-size: 18px;font-weight: 500;
+    line-height: 27px;color: var(--prs-gary-clr);
+    max-width: 460px;
+}
+.prs-carousel .carousel-indicators{
+    gap: 6px;
+    margin-inline: 0px;
+    margin-bottom: 6.5rem;
+}
+.prs-carousel .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #D1D2D1;
+    padding: 0;
+    margin-inline: 0;
+    border: 0;
+    opacity: 1;
+}
+.prs-carousel .carousel-indicators .active {background: var(--prs-primary-clr)}
+.prs-carousel .carousel-control-next{
+    inset-inline-start: calc(50% - 46px);
+    /*right: auto;*/
+}
+.prs-carousel .carousel-control-prev{
+    inset-inline-end: calc(50% - 46px);
+    /*left: auto;*/
+}
+.prs-carousel .carousel-control-next,
+.prs-carousel .carousel-control-prev{
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--prs-primary-clr);
+    border-radius: 50%;
+    opacity: 1;
+    top: auto;
+    bottom: 3rem;
+}
+.prs-carousel .carousel-control-next.active,
+.prs-carousel .carousel-control-prev.active,
+.prs-carousel .carousel-control-next:hover,
+.prs-carousel .carousel-control-prev:hover
+{background-color: var(--prs-secondary-clr)}
+.prs-carousel .carousel-control-next-icon,
+.prs-carousel .carousel-control-prev-icon {
+    width: 16px;
+    height: 16px;
+}
+.prs-carousel .carousel-control-next-icon {
+    background-image: url('/assets/media/iconS/arrow-right.svg');
+}
+.prs-carousel .carousel-control-prev-icon {
+    background-image: url('/assets/media/iconS/arrow-left.svg');
+}
+@media (max-width: 767px) {
+    .prs-carousel .carousel-inner .carousel-item{padding: 24px 14px 6rem 14px;}
+    .prs-carousel .carousel-indicators {margin-bottom: 5rem;}
+    .prs-carousel .carousel-control-next,
+    .prs-carousel .carousel-control-prev{bottom: 1.9rem;}
+}

@@ -26,7 +26,10 @@
                     </li>
                 </ul>
                 <div class="prs-header-action">
-                    <button class="btn prs-btn prs-btn-outline-gray" (click)="toggleLang()">E</button>
+                    <button class="btn prs-btn prs-btn-outline-gray" (click)="toggleLang()">
+                        <span *ngIf="translate.currentLang != 'ar'">ع</span>
+                        <span *ngIf="translate.currentLang == 'ar'">E</span>
+                    </button>
                     <button class="btn prs-btn prs-btn-primary">{{'header.home' | translate }}</button>
                 </div>
 

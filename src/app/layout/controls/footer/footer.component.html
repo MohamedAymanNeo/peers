@@ -28,10 +28,11 @@
             </div>
             <div class="prs-footer-bottom  align-items-center">
                 <div class="prs-footer-social-links gap-2 d-flex">
-                    <a href="#"><img src="assets/media/iconS/tiktok.svg"></a>
-                    <a href="#"><img src="assets/media/iconS/snap.svg"></a>
-                    <a href="#"><img src="assets/media/iconS/insta.svg"></a>
-                    <a href="#"><img src="assets/media/iconS/twitter.svg"></a>
+                    <ng-container *ngFor="let socialLinks of footerData">
+                        <a [href]="socialLinks.url" target="_blank">
+                            <img [src]="'assets/media/iconS/'+ socialLinks.key + '.svg'">
+                        </a>
+                    </ng-container>
                 </div>
                 <p class="prs-footer-copy-right">@2024 Peers</p>
             </div>
@@ -44,10 +45,11 @@
                 </p>
             </div>
             <div class="prs-footer-social-links gap-2 d-flex justify-content-center">
-                <a href="#"><img src="assets/media/iconS/tiktok.svg"></a>
-                <a href="#"><img src="assets/media/iconS/snap.svg"></a>
-                <a href="#"><img src="assets/media/iconS/insta.svg"></a>
-                <a href="#"><img src="assets/media/iconS/twitter.svg"></a>
+                <ng-container *ngFor="let socialLinks of footerData">
+                    <a [href]="socialLinks.url" target="_blank">
+                        <img [src]="'assets/media/iconS/'+ socialLinks.key + '.svg'">
+                    </a>
+                </ng-container>
             </div>
             <div class="d-flex justify-content-between gap-1 flex-wrap mt-3">
                 <div class="prs-footer-links">

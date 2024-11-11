@@ -6,8 +6,6 @@ import { HeaderComponent } from '../controls/header/header.component';
 import { FooterComponent } from '../controls/footer/footer.component';
 import { LayoutComponent } from '../layout.component';
 import { HomeModule } from 'src/app/home/module/home.module';
-import { CoreModule } from 'src/app/shared/core.module';
-import { SharedModule } from 'src/app/shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
 
 
@@ -16,12 +14,17 @@ import { TranslateModule } from '@ngx-translate/core';
     HeaderComponent,
     FooterComponent,
     LayoutComponent,
+    
   ],
   imports: [
     CommonModule,
     LayoutRoutingModule,
     HomeModule,
-    TranslateModule 
+    TranslateModule,
+    
+  ],
+  exports:[
+    
   ]
 })
 export class LayoutModule { }

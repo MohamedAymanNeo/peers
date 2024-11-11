@@ -24,4 +24,9 @@ export class LinksService {
       this.peersUrl + 'GetAboutApp/about'
     );
   }
+  GetSocials() {
+    return this.http.get(
+      this.peersUrl + 'SocialUrls'
+    );
+  }
 }

@@ -5,14 +5,14 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { TranslateModule } from "@ngx-translate/core";
 import { LayoutModule } from "../layout/module/layout.module";
-import { CoreModule } from "./core.module";
+import { SpinnerComponent } from "../layout/controls/extra/spinner/spinner.component";
 
 
 
 
 @NgModule({
     declarations: [
-     
+        SpinnerComponent
 
     ],
     imports:[
@@ -34,7 +34,7 @@ import { CoreModule } from "./core.module";
         HttpClientModule,
         RouterModule,
         LayoutModule,
-        
+        SpinnerComponent
 
 
     ],providers:[]

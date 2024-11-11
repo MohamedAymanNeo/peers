@@ -8,15 +8,18 @@ import {
 } from '@angular/common/http';
 import { Observable, finalize, tap } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { SpinnerService } from 'src/app/layout/controls/extra/spinner/services/spinner.service';
 @Injectable()
 export class HttpConfigInterceptor implements HttpInterceptor {
-  constructor() {}
+  constructor(private spinnerService: SpinnerService,) {}
   intercept(
     request: HttpRequest<unknown>,
     next: HttpHandler
   ): Observable<HttpEvent<unknown>> {
-    let baseUrl = environment.apiServer.peersUrl
+    // debugger
     let currentLang = localStorage.getItem('language') || 'ar'
+    this.spinnerService.setSpinner(true);
+    console.log('spinner');
       request = request.clone({
         headers: request.headers
           .set('LanguageCode', currentLang)
@@ -29,7 +32,9 @@ export class HttpConfigInterceptor implements HttpInterceptor {
         }
       }),
       finalize(()=>{
-        
+        setTimeout(() => {
+          this.spinnerService.setSpinner(false);
+        }, 100);
       })
     );
   }

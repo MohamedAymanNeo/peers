@@ -60,6 +60,9 @@ export class TranslationService {
     );
   }
   toggleLang() {
+    const htmlTag = document.getElementsByTagName('html')[0] as HTMLHtmlElement;
+    htmlTag.dir = htmlTag.dir === 'ltr' ? 'rtl' : 'ltr';
+    htmlTag.lang = htmlTag.lang === 'en' ? 'ar' : 'en';
     const currentLang = this.translate.currentLang == 'ar' ? 'en' : 'ar';
     this.setLanguage(currentLang);
   }

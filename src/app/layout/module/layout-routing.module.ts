@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from '../layout.component';
 import { PrivacyComponent } from '../controls/links/privacy/privacy.component';
+import { HomeComponent } from 'src/app/home/home.component';
 
 const routes: Routes = [
   {
@@ -11,10 +12,10 @@ const routes: Routes = [
       {
           path: '',
           pathMatch:'full',  
-          redirectTo:'/home',
+          redirectTo:'/',
       },
       {
-        path: 'home',
+        path: '',
         loadChildren: () =>
           import('../../home/module/home.module').then((m) => m.HomeModule),
 
@@ -25,6 +26,9 @@ const routes: Routes = [
           import('../controls/links/module/links.module').then((m) => m.LinksModule),
 
       },
+      
+      
+      
       
     ]}
     

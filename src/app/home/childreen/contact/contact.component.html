@@ -1,19 +1,19 @@
 <!-- contact form-->
-<div class="prs-contact-form-wrapper">
+<div class="prs-contact-form-wrapper" id="section4">
     <div class="container">
         <div class="prs-contact-form row">
             <div class="col-md-5 col-sm-12">
                 <div class="prs-contact-form-text-wrapper">
-                    <h5 class="prs-contact-form-title">تواصل معنا الأن</h5>
-                    <p class="prs-contact-form-desc">لأي استفسارات أو دعم، تواصل فريقنا جاهز لخدمتك في أي وقت!</p>
+                    <h5 class="prs-contact-form-title">{{'contactUs.contactTitle' | translate}}</h5>
+                    <p class="prs-contact-form-desc">{{'contactUs.contactDesc' | translate}}</p>
                 </div>
             </div>
             <div class="col-md-7 col-sm-12">
                 <div class="prs-contact-form-input-wrapper">
                     <form>
                         <div class="form-group mail-group">
-                            <textarea class="form-control" placeholder="أكتب رسالتك هنا"></textarea>
-                            <button class="btn prs-btn prs-btn-primary">إرسال</button>
+                            <textarea class="form-control" [placeholder]="'contactUs.inputPlaceholder' | translate"></textarea>
+                            <button class="btn prs-btn prs-btn-primary">{{'contactUs.send' | translate}}</button>
                         </div>
                     </form>
                 </div>

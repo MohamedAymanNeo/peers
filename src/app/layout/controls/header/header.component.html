@@ -13,16 +13,16 @@
                         <a class="nav-link active" aria-current="page" routerLink="/home">{{'header.home' | translate }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">{{'header.aboutPeers' | translate }}</a>
+                        <a class="nav-link" (click)="scrollToSection('section1')">{{'header.aboutPeers' | translate }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">{{'header.advantages' | translate }}</a>
+                        <a class="nav-link" (click)="scrollToSection('section2')">{{'header.advantages' | translate }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">{{'header.faq' | translate }}</a>
+                        <a class="nav-link" (click)="scrollToSection('section3')">{{'header.faq' | translate }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">{{'header.contactUs' | translate }}</a>
+                        <a class="nav-link" (click)="scrollToSection('section4')">{{'header.contactUs' | translate }}</a>
                     </li>
                 </ul>
                 <div class="prs-header-action">

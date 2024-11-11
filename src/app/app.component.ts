@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslationService } from './shared/translation/translation.service';
 import { TranslateService } from '@ngx-translate/core';
-
+const LOCALIZATION_LOCAL_STORAGE_KEY = 'language';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,7 +9,16 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'peers';
-  constructor() {
+  constructor(translate: TranslateService,
+    private translationService: TranslationService,) {
+    // this.translationService.setLanguage('ar');
+    const lang = localStorage.getItem(LOCALIZATION_LOCAL_STORAGE_KEY);
+    if (lang) {
+      setTimeout(() => {
+        translate.use(lang);
+      }, 500);
+
+    }
   }
   
 }

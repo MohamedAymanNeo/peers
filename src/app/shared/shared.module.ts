@@ -6,13 +6,15 @@ import { RouterModule } from "@angular/router";
 import { TranslateModule } from "@ngx-translate/core";
 import { LayoutModule } from "../layout/module/layout.module";
 import { SpinnerComponent } from "../layout/controls/extra/spinner/spinner.component";
+import { ScrolltopComponent } from "../layout/controls/extra/scrolltop/scrolltop.component";
 
 
 
 
 @NgModule({
     declarations: [
-        SpinnerComponent
+        SpinnerComponent,
+        ScrolltopComponent
 
     ],
     imports:[
@@ -34,8 +36,8 @@ import { SpinnerComponent } from "../layout/controls/extra/spinner/spinner.compo
         HttpClientModule,
         RouterModule,
         LayoutModule,
-        SpinnerComponent
-
+        SpinnerComponent,
+        ScrolltopComponent
 
     ],providers:[]
 })

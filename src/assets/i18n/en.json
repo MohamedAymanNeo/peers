@@ -22,6 +22,35 @@
   "download":{
     "downloadTitle":"Turn every click into a new discovery!",
     "downloadDesc":"Join now a different shopping world, where every click becomes an opportunity to discover new products and services. Start your journey today!"
+  },
+  "firstSection":{
+    "title":"Shop and share in one place Discover, buy, and communicate",
+    "desc":"Our application combines shopping and social networking, allowing you to discover products and buy them, while communicating and sharing your moments with others",
+    "btn":"Join us now",
+    "users":"More than 1000 users"
+  },
+  "advantages":{
+    "mainTitle":"Advantages",
+    "mainDesc":"Many advantages to discover with Peers",
+    "titleOne":"Integrated shopping experience with social networks",
+    "descriptionOne":"Browse and buy products and services directly from your favorite social networks",
+    "titleTwo":"Custom recommendations",
+    "descriptionTwo":"Get recommendations for products and services that suit your interests and personal preferences",
+    "titleThree":"Social and interactive shopping",
+    "descriptionThree":"Share shopping experiences and ratings with others and shop with them in an interactive and fun way",
+    "titleFour":"Customer service available at all times",
+    "descriptionFour":"24/7 customer support to ensure a smooth and hassle-free shopping experience",
+    "titleFive":"Safe and diverse payment methods",
+    "descriptionFive":"The various and secure payment options provided by the application make the purchasing process easy and secure"
+  },
+  "fqa":{
+    "fqaTitle":"Common Questions",
+    "fqaDesc":"Answers to the most common questions about using the application"
+  },
+  "contactUs":{
+    "contactTitle":"Contact us now",
+    "contactDesc":"We are here to help you in case you encounter any problem or have any inquiry",
+    "inputPlaceholder":"Write your message here",
+    "send":"Send"
   }
-  
 }

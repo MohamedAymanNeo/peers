@@ -7,7 +7,6 @@ import {
   HttpResponse,
 } from '@angular/common/http';
 import { Observable, finalize, tap } from 'rxjs';
-import { environment } from 'src/environments/environment';
 import { SpinnerService } from 'src/app/layout/controls/extra/spinner/services/spinner.service';
 @Injectable()
 export class HttpConfigInterceptor implements HttpInterceptor {
@@ -19,7 +18,6 @@ export class HttpConfigInterceptor implements HttpInterceptor {
     // debugger
     let currentLang = localStorage.getItem('language') || 'ar'
     this.spinnerService.setSpinner(true);
-    console.log('spinner');
       request = request.clone({
         headers: request.headers
           .set('LanguageCode', currentLang)

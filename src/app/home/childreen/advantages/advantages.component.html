@@ -1,22 +1,22 @@
 <!--Advantages-->
-<div class="container">
+<div class="container" id="section2">
     <div class="prs-title-wrapper">
-        <h2 class="prs-title">المزايا</h2>
-        <p class="prs-subtitle">مزايا عديدة لتكتشفها مع بيرز</p>
+        <h2 class="prs-title">{{'advantages.mainTitle'| translate}}</h2>
+        <p class="prs-subtitle">{{'advantages.mainDesc'| translate}}</p>
     </div>
     <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let advantage of advantages">
             <div class="prs-advantages-card">
                 <div class="prs-icon-wrapper">
-                    <img src="assets/media/iconS/note-2.svg">
+                    <img [src]="'assets/media/iconS/'+advantage.icon+'.svg'">
                 </div>
                 <div class="text-wrapper">
-                    <h5 class="prs-card-title">تجربة تسوق مدمجة مع الشبكات الاجتماعية</h5>
-                    <p class="prs-card-desc">تصفح واشتري المنتجات والخدمات مباشرة من شبكاتك الاجتماعية المفضلة</p>
+                    <h5 class="prs-card-title">{{advantage.title | translate}}</h5>
+                    <p class="prs-card-desc">{{advantage.description | translate}}</p>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
+        <!-- <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="prs-advantages-card">
                 <div class="prs-icon-wrapper">
                     <img src="assets/media/iconS/element-plus.svg">
@@ -59,6 +59,6 @@
                     <p class="prs-card-desc">خيارات الدفع المتنوعة والآمنة التي يوفرها التطبيق، مما يجعل عملية الشراء سهلة وآمنة</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

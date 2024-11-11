@@ -3,6 +3,7 @@
 
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { BehaviorSubject } from 'rxjs';
 
 export interface Locale {
   lang: string;
@@ -13,6 +14,7 @@ export const LOCALIZATION_LOCAL_STORAGE_KEY = 'language';
 
 @Injectable()
 export class TranslationService {
+  activeLang: BehaviorSubject<string> = new BehaviorSubject<string>('ar');
   // Private properties
   private langIds: any = [];
 
@@ -62,11 +64,19 @@ export class TranslationService {
   toggleLang() {
     const currentLang = this.translate.currentLang == 'ar' ? 'en' : 'ar';
     this.setLanguage(currentLang);
+    this.activeLang.next(currentLang);
     this.setHtmlDir();
   }
   setHtmlDir() {
+    // debugger
     const htmlTag = document.getElementsByTagName('html')[0] as HTMLHtmlElement;
-    htmlTag.dir = htmlTag.dir === 'ltr' ? 'rtl' : 'ltr';
-    htmlTag.lang = htmlTag.lang === 'en' ? 'ar' : 'en';
+    if(localStorage.getItem(LOCALIZATION_LOCAL_STORAGE_KEY) == 'ar'){
+      htmlTag.dir = 'rtl';
+      htmlTag.lang = 'ar';
+    } else {
+      htmlTag.dir = 'ltr';
+      htmlTag.lang = 'en';
+    }
+   
   }
 }

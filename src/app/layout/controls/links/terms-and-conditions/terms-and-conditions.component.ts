@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 import { LinksService } from 'src/app/shared/services/Links.service';
+import { TranslationService } from 'src/app/shared/translation/translation.service';
 
 @Component({
   selector: 'app-terms-and-conditions',
@@ -12,9 +13,12 @@ export class TermsAndConditionsComponent {
   subscriptions:Subscription[] = []
   rawHtmlContent: string = '';     
   sanitizedHtmlContent!: SafeHtml;   
-constructor(private linksServ:LinksService,private sanitizer: DomSanitizer ) {}
+constructor(private linksServ:LinksService,private sanitizer: DomSanitizer,private translateServ:TranslationService  ) {}
   ngOnInit(): void {
-    this.getTermsData()
+    const subs = this.translateServ.activeLang.subscribe((lang:string)=> {
+      this.getTermsData()
+    })
+    this.subscriptions.push(subs)
   }
   getTermsData() {
     const subs = this.linksServ.GetTerms().subscribe((resp:any)=> {

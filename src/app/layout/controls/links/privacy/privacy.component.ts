@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 import { LinksService } from 'src/app/shared/services/Links.service';
+import { TranslationService } from 'src/app/shared/translation/translation.service';
 
 @Component({
   selector: 'app-privacy',
@@ -12,9 +13,12 @@ export class PrivacyComponent {
   subscriptions:Subscription[] = []
   rawHtmlContent: string = '';     
   sanitizedHtmlContent!: SafeHtml; 
-constructor(private linksServ:LinksService,private sanitizer: DomSanitizer ) {}
+constructor(private linksServ:LinksService,private sanitizer: DomSanitizer,private translateServ:TranslationService ) {}
   ngOnInit(): void {
-    this.getPrivacyData()
+    const subs = this.translateServ.activeLang.subscribe((lang:string)=> {
+      this.getPrivacyData()
+    })
+    this.subscriptions.push(subs)
   }
   getPrivacyData() {
     const subs = this.linksServ.GetPrivacy().subscribe((resp:any)=> {

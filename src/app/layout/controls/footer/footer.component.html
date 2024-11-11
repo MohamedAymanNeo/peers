@@ -18,19 +18,19 @@
                 <div class="prs-footer-contact">
                     <div class="prs-footer-contact-item">
                         <img src="assets/media/iconS/sms.svg">
-                        <a>event@example.com</a>
+                        <a [href]="'mailto:'+contactDetails.email">{{contactDetails.email}}</a>
                     </div>
                     <div class="prs-footer-contact-item">
                         <img src="assets/media/iconS/call.svg">
-                        <a>+9660000000000</a>
+                        <a>+{{contactDetails.phone}}</a>
                     </div>
                 </div>
             </div>
             <div class="prs-footer-bottom  align-items-center">
                 <div class="prs-footer-social-links gap-2 d-flex">
-                    <ng-container *ngFor="let socialLinks of footerData">
-                        <a [href]="socialLinks.url" target="_blank">
-                            <img [src]="'assets/media/iconS/'+ socialLinks.key + '.svg'">
+                    <ng-container *ngFor="let link of socialLinks">
+                        <a [href]="link.url" target="_blank">
+                            <img [src]="'assets/media/iconS/'+ link.key + '.svg'">
                         </a>
                     </ng-container>
                 </div>
@@ -45,9 +45,9 @@
                 </p>
             </div>
             <div class="prs-footer-social-links gap-2 d-flex justify-content-center">
-                <ng-container *ngFor="let socialLinks of footerData">
-                    <a [href]="socialLinks.url" target="_blank">
-                        <img [src]="'assets/media/iconS/'+ socialLinks.key + '.svg'">
+                <ng-container *ngFor="let link of socialLinks">
+                    <a [href]="link.url" target="_blank">
+                        <img [src]="'assets/media/iconS/'+ link.key + '.svg'">
                     </a>
                 </ng-container>
             </div>
@@ -60,11 +60,11 @@
                 <div class="prs-footer-contact">
                     <div class="prs-footer-contact-item mb-3">
                         <img src="assets/media/iconS/sms.svg">
-                        <a>event@example.com</a>
+                        <a>{{contactDetails.email}}</a>
                     </div>
                     <div class="prs-footer-contact-item">
                         <img src="assets/media/iconS/call.svg">
-                        <a>+9660000000000</a>
+                        <a>+{{contactDetails.phone}}</a>
                     </div>
                 </div>
             </div>

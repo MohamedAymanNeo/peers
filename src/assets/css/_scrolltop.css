@@ -1,0 +1,64 @@
+/* === === Variables === === */
+.scrolltop{
+    --scrolltop-width: 35px;
+    --scrolltop-height: 35px;
+    --scrolltop-ie: 20px;
+    --scrolltop-bottom: 40px;
+    --scrolltop-bg: var(--clr-primary);
+    --scrolltop-boxshadow: 0 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.075);
+    --scrolltop-border-radius: 8px;
+    /* svg */
+    --scrolltop-svg-fill: var(--clr-white);
+}
+/* ==== === ==== === ==== === ==== */
+/* === === General Styling === === */
+.scrolltop {
+    position: fixed;
+    opacity: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: var(--scrolltop-width);
+    height: var(--scrolltop-height);
+    inset-inline-end: var(--scrolltop-ie);
+    bottom: var(--scrolltop-bottom);
+    z-index: 101;
+    background-color: var(--scrolltop-bg);
+    box-shadow: var(--scrolltop-boxshadow);
+    border-radius: var(--scrolltop-border-radius) !important;
+    transition: color 0.15s ease, background-color 0.15s ease,
+        border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.scrolltop .ng-fa-icon svg [fill] {transition: fill 0.3s ease; fill: var(--scrolltop-svg-fill);}
+.scrolltop svg:hover [fill] {transition: fill 0.3s ease;}
+.scrolltop:hover svg [fill] {transition: fill 0.3s ease; fill: var(--scrolltop-svg-fill);}
+.scrolltop:hover .ng-fa-icon svg:hover [fill] {transition: fill 0.3s ease;}
+[data-scrolltop="on"] .scrolltop {display: flex; opacity: 0.3; -webkit-animation: animation-scrolltop 0.4s ease-out 1; animation: animation-scrolltop 0.4s ease-out 1;}
+[data-scrolltop="on"] .scrolltop:hover {opacity: 1; transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;}
+/* @media (max-width: 991.98px) {
+    .scrolltop {
+        bottom: 3rem;
+        inset-inline-end: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+} */
+@-webkit-keyframes animation-scrolltop {
+    0% {
+        margin-bottom: -1.5rem;
+    }
+
+    to {
+        margin-bottom: 0;
+    }
+}
+@keyframes animation-scrolltop {
+    0% {
+        margin-bottom: -1.5rem;
+    }
+
+    to {
+        margin-bottom: 0;
+    }
+}

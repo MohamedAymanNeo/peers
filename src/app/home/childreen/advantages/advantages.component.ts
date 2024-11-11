@@ -35,7 +35,4 @@ export class AdvantagesComponent {
     },
   ]
   constructor() { }
-  scrollToSection() {
-    this.section.nativeElement.scrollIntoView({ behavior: 'smooth' });
-  }
 }

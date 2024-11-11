@@ -9,14 +9,18 @@ const LOCALIZATION_LOCAL_STORAGE_KEY = 'language';
 })
 export class AppComponent {
   title = 'peers';
+  showSpinner = true;
   constructor(translate: TranslateService,
     private translationService: TranslationService,) {
     // this.translationService.setLanguage('ar');
+    // debugger
     const lang = localStorage.getItem(LOCALIZATION_LOCAL_STORAGE_KEY);
     if (lang) {
-      setTimeout(() => {
+      // setTimeout(() => {
         translate.use(lang);
-      }, 500);
+        this.translationService.setHtmlDir()
+        
+      // }, 500);
 
     }
   }

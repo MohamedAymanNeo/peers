@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { LinksService } from 'src/app/shared/services/Links.service';
+import { TranslationService } from 'src/app/shared/translation/translation.service';
 
 @Component({
   selector: 'app-footer',
@@ -9,17 +10,22 @@ import { LinksService } from 'src/app/shared/services/Links.service';
 })
 export class FooterComponent {
   subscriptions:Subscription[] = []
-  footerData: any = [];
-  constructor(private linkService: LinksService) { }
+  contactDetails: any = [];
+  socialLinks: any = [];
+  constructor(private linkService: LinksService,private translateServ:TranslationService) { }
 
   ngOnInit(): void {
-    this.getSocialData()
+    const subs = this.translateServ.activeLang.subscribe((lang:string)=> {
+      this.getSocialData()
+    })
+    this.subscriptions.push(subs)
   }
 
   getSocialData() {
-    const subs = this.linkService.GetSocials().subscribe((resp:any)=> {
+    const subs = this.linkService.GetContactDetails().subscribe((resp:any)=> {
       if(resp.success) {
-        this.footerData = resp.result;
+        this.socialLinks = resp.result.socialLinks;
+        this.contactDetails = resp.result.contactInfo;
        console.log(resp.result);
        
       };

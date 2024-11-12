@@ -2,7 +2,7 @@
     <nav class="navbar prs-header navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="assets/media/SVGs/logo-header.svg" alt="Peers Logo">
+                <img src="assets/media/SVGs/logo-header.svg" alt="Peers Logo" loading="lazy">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,11 +26,11 @@
                     </li>
                 </ul>
                 <div class="prs-header-action">
-                    <button class="btn prs-btn prs-btn-outline-gray" (click)="toggleLang()">
+                    <button class="btn prs-btn prs-btn-outline-gray" aria-label="language" (click)="toggleLang()">
                         <span *ngIf="translate.currentLang != 'ar'">ع</span>
                         <span *ngIf="translate.currentLang == 'ar'">E</span>
                     </button>
-                    <button class="btn prs-btn prs-btn-primary">{{'header.home' | translate }}</button>
+                    <button class="btn prs-btn prs-btn-primary" aria-label="Home6">{{'header.home' | translate }}</button>
                 </div>
 
             </div>

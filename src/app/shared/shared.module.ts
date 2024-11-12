@@ -6,8 +6,6 @@ import { RouterModule } from "@angular/router";
 import { TranslateModule } from "@ngx-translate/core";
 import { LayoutModule } from "../layout/module/layout.module";
 import { SpinnerComponent } from "../layout/controls/extra/spinner/spinner.component";
-import { ScrolltopComponent } from "../layout/controls/extra/scrolltop/scrolltop.component";
-import { SvgInlineDirective } from "./directives/svg-inline.directive";
 
 
 
@@ -15,8 +13,7 @@ import { SvgInlineDirective } from "./directives/svg-inline.directive";
 @NgModule({
     declarations: [
         SpinnerComponent,
-        // ScrolltopComponent,
-        // SvgInlineDirective
+
 
     ],
     imports:[
@@ -28,9 +25,6 @@ import { SvgInlineDirective } from "./directives/svg-inline.directive";
         TranslateModule,
         ReactiveFormsModule,
         LayoutModule,
-        // SvgInlineDirective
-        // ScrolltopComponent
-        
     ],
     exports: [
         FormsModule,

@@ -5,7 +5,7 @@
         <div class="d-none d-md-block d-lg-block d-xxl-block">
             <div class="prs-footer-top">
                 <div class="prs-footer-logo-wrapper">
-                    <img src="assets/media/SVGs/logo--primary.svg">
+                    <img src="assets/media/SVGs/logo--primary.svg" alt="Peers" loading="lazy">
                     <p class="prs-footer-desc">
                         {{'footer.footerText' | translate }}
                     </p>
@@ -17,11 +17,11 @@
                 </div>
                 <div class="prs-footer-contact">
                     <div class="prs-footer-contact-item">
-                        <img src="assets/media/iconS/sms.svg">
+                        <img src="assets/media/iconS/sms.svg" alt="Peers" loading="lazy">
                         <a [href]="'mailto:'+contactDetails.email">{{contactDetails.email}}</a>
                     </div>
                     <div class="prs-footer-contact-item">
-                        <img src="assets/media/iconS/call.svg">
+                        <img src="assets/media/iconS/call.svg" alt="Peers" loading="lazy">
                         <a>+{{contactDetails.phone}}</a>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                 <div class="prs-footer-social-links gap-2 d-flex">
                     <ng-container *ngFor="let link of socialLinks">
                         <a [href]="link.url" target="_blank">
-                            <img [src]="'assets/media/iconS/'+ link.key + '.svg'">
+                            <img [src]="'assets/media/iconS/'+ link.key + '.svg'" alt="Peers" loading="lazy">
                         </a>
                     </ng-container>
                 </div>
@@ -39,7 +39,7 @@
         </div>
         <div class="d-md-none d-sm-block d-xs-block">
             <div class="prs-footer-logo-wrapper d-flex align-items-center flex-column">
-                <img src="assets/media/SVGs/logo--primary.svg">
+                <img src="assets/media/SVGs/logo--primary.svg" alt="Peers" loading="lazy">
                 <p class="prs-footer-desc text-center">
                     {{'footer.footerText' | translate }}
                 </p>
@@ -47,7 +47,7 @@
             <div class="prs-footer-social-links gap-2 d-flex justify-content-center">
                 <ng-container *ngFor="let link of socialLinks">
                     <a [href]="link.url" target="_blank">
-                        <img [src]="'assets/media/iconS/'+ link.key + '.svg'">
+                        <img [src]="'assets/media/iconS/'+ link.key + '.svg'" alt="Peers" loading="lazy">
                     </a>
                 </ng-container>
             </div>
@@ -59,11 +59,11 @@
                 </div>
                 <div class="prs-footer-contact">
                     <div class="prs-footer-contact-item mb-3">
-                        <img src="assets/media/iconS/sms.svg">
+                        <img src="assets/media/iconS/sms.svg" alt="Peers" loading="lazy">
                         <a>{{contactDetails.email}}</a>
                     </div>
                     <div class="prs-footer-contact-item">
-                        <img src="assets/media/iconS/call.svg">
+                        <img src="assets/media/iconS/call.svg" alt="Peers" loading="lazy">
                         <a>+{{contactDetails.phone}}</a>
                     </div>
                 </div>

@@ -8,7 +8,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let advantage of advantages">
             <div class="prs-advantages-card">
                 <div class="prs-icon-wrapper">
-                    <img [src]="'assets/media/iconS/'+advantage.icon+'.svg'">
+                    <img [src]="'assets/media/iconS/'+advantage.icon+'.svg'" alt="Peers" loading="lazy">
                 </div>
                 <div class="text-wrapper">
                     <h5 class="prs-card-title">{{advantage.title | translate}}</h5>
@@ -16,49 +16,5 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="prs-advantages-card">
-                <div class="prs-icon-wrapper">
-                    <img src="assets/media/iconS/element-plus.svg">
-                </div>
-                <div class="text-wrapper">
-                    <h5 class="prs-card-title">توصيات مخصصة</h5>
-                    <p class="prs-card-desc">احصل على توصيات منتجات وخدمات تناسب اهتماماتك وتفضيلاتك الشخصية</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="prs-advantages-card">
-                <div class="prs-icon-wrapper">
-                    <img src="assets/media/iconS/star.svg">
-                </div>
-                <div class="text-wrapper">
-                    <h5 class="prs-card-title">تسوق اجتماعي وتفاعلي</h5>
-                    <p class="prs-card-desc">شارك تجارب التسوق والتقييمات مع الأخرين وتسوق معهم بطريقة تفاعلية وممتعة</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="prs-advantages-card">
-                <div class="prs-icon-wrapper">
-                    <img src="assets/media/iconS/security-user.svg">
-                </div>
-                <div class="text-wrapper">
-                    <h5 class="prs-card-title">خدمة عملاء متاحة دائماً</h5>
-                    <p class="prs-card-desc">دعم العملاء علي مدار الساعة لضمان تسوق سلس وخالٍ من المتاعب</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="prs-advantages-card">
-                <div class="prs-icon-wrapper">
-                    <img src="assets/media/iconS/money-tick.svg">
-                </div>
-                <div class="text-wrapper">
-                    <h5 class="prs-card-title">طرق دفع آمنة ومتنوعة</h5>
-                    <p class="prs-card-desc">خيارات الدفع المتنوعة والآمنة التي يوفرها التطبيق، مما يجعل عملية الشراء سهلة وآمنة</p>
-                </div>
-            </div>
-        </div> -->
     </div>
 </div>

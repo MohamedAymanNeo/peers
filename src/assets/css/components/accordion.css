@@ -15,6 +15,7 @@
     color:var(--prs-black-clr);
     line-height: 56px;
     font-weight: 700;
+    justify-content: space-between;
 }
 .accordion.prs-accordion .accordion-header{}
 .accordion.prs-accordion .accordion-body{

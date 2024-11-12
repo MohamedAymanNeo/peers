@@ -40,6 +40,7 @@
     inset-inline-end: calc(50% - 46px);
     /*left: auto;*/
 }
+html[dir="ltr"] .prs-carousel .carousel-control-prev{left: auto;}
 .prs-carousel .carousel-control-next,
 .prs-carousel .carousel-control-prev{
     width: 36px;
@@ -59,6 +60,10 @@
 .prs-carousel .carousel-control-prev-icon {
     width: 16px;
     height: 16px;
+}
+html[dir="ltr"] .prs-carousel .carousel-control-next-icon,
+html[dir="ltr"] .prs-carousel .carousel-control-prev-icon {
+    transform: rotate(180deg);
 }
 .prs-carousel .carousel-control-next-icon {
     background-image: url('/assets/media/iconS/arrow-right.svg');

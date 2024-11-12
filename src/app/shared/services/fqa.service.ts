@@ -13,7 +13,7 @@ export class FqaService {
   constructor(private http:HttpClient) { }
   GetFQA() {
     return this.http.get(
-      this.peersUrl + 'GetFaqs'
+      this.peersUrl + 'api/Common/GetFaqs'
     );
   }
 }

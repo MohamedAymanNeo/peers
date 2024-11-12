@@ -11,22 +11,22 @@ export class LinksService {
   constructor(private http:HttpClient) { }
   GetPrivacy() {
     return this.http.get(
-      this.peersUrl + 'GetPolicy/policy'
+      this.peersUrl + 'api/Common/GetPolicy/policy'
     );
   }
   GetTerms() {
     return this.http.get(
-      this.peersUrl + 'GetTermsAndConditions'
+      this.peersUrl + 'api/Common/GetTermsAndConditions'
     );
   }
   GetAboutApp() {
     return this.http.get(
-      this.peersUrl + 'GetAboutApp/about'
+      this.peersUrl + 'api/Common/GetAboutApp/about'
     );
   }
   GetContactDetails() {
     return this.http.get(
-      this.peersUrl + 'GetContactDetails'
+      this.peersUrl + 'api/Common/GetContactDetails'
     );
   }
 }

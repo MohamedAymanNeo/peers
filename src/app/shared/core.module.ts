@@ -11,16 +11,6 @@ import { HttpConfigInterceptor } from "./interceptors/http/http-config.intercept
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
 }
-function getAppConfig()  {
-  return environment;
-}
-
-
-// function getBaseUrl (appConfig:ConfigurationService){
-//   let url = appConfig.settings.apiServer.peersUrl
-//   return url.slice(0, url.length-1)
-// }
-
 @NgModule({
   imports: [
     CommonModule,

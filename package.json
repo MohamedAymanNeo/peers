@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-test": "node --max_old_space_size=9999999 node_modules/@angular/cli/bin/ng build --build-optimizer --vendor-chunk --configuration testing",
+    "build-prod": "node --max_old_space_size=9999999 node_modules/@angular/cli/bin/ng build --build-optimizer --vendor-chunk --configuration production"
   },
   "private": true,
   "dependencies": {

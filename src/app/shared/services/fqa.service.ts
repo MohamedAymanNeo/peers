@@ -16,4 +16,10 @@ export class FqaService {
       this.peersUrl + 'api/Common/GetFaqs'
     );
   }
+  getSliderData() {
+    return this.http.get(
+      this.peersUrl + 'api/Common/GetUISliders'
+    );
+  }
+
 }

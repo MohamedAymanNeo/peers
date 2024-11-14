@@ -26,7 +26,6 @@ export class FooterComponent {
       if(resp.success) {
         this.socialLinks = resp.result.socialLinks;
         this.contactDetails = resp.result.contactInfo;
-       console.log(resp.result);
        
       };
       this.subscriptions.push(subs)

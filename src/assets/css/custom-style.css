@@ -33,6 +33,7 @@ body{
     font-family:var(--body-ff);
     background-color: var(--prs-body-bg-clr);
 }
+body *{font-family: var(--body-ff);}
 .prs-title-wrapper{
     display: flex;
     flex-direction: column;
@@ -260,6 +261,8 @@ body{
 /*--About--*/
 .prs-about-wrapper{
     background-color: var(--prs-light-gary-clr-bg);
+    padding-top: 4px;
+    /*padding-bottom: 24px;*/
 }
 .prs-about-wrapper .prs-carousel-container{
     position: relative;

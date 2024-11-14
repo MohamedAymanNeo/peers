@@ -28,7 +28,7 @@
     color:var(--prs-black-clr);
     font-size: 16px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: 700;text-align: center;
 }
 .prs-advantages-card .text-wrapper .prs-card-desc{
     color:var(--prs-gary-clr);
@@ -36,6 +36,8 @@
     line-height: 30px;
     font-weight: 500;
     max-width: 325px;
+    text-align: center;
+    margin: 0 auto;
 }
 /*hover*/
 .prs-advantages-card:hover{

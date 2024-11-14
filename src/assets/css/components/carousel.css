@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     padding: 77px 14px 8rem 14px;
+    font-family: var(--body-ff);
 }
 .prs-carousel .carousel-item .prs-carousel-title{
     font-size: 24px;font-weight: 600;

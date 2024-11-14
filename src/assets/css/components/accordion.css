@@ -3,6 +3,7 @@
 }
 .accordion.prs-accordion.accordion-flush> .accordion-item{
     border-block: 1px solid var(--prs-light-gary-clr);
+    font-family: var(--body-ff);
 }
 .accordion.prs-accordion.accordion-flush .accordion-button::after {
     margin-inline-start: auto;    margin-left: 0;
@@ -16,6 +17,7 @@
     line-height: 56px;
     font-weight: 700;
     justify-content: space-between;
+    font-family: var(--body-ff);
 }
 .accordion.prs-accordion .accordion-header{}
 .accordion.prs-accordion .accordion-body{
@@ -23,6 +25,7 @@
     font-size: 18px;
     line-height: 27px;
     padding:  0 0 32px 0;
+    font-family: var(--body-ff);
 }
 .accordion.prs-accordion .accordion-button:not(.collapsed){
     background-color: var(--prs-white-clr);

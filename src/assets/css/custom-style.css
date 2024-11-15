@@ -97,14 +97,14 @@ body *{font-family: var(--body-ff);}
     font-family: var(--body-ff);
 }
 .prs-hero-section-wrapper .prs-hero-text-wrapper .prs-hero-title-wrapper .prs-hero-title{
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 800;
     line-height: 56px;
     color:var(--prs-primary-clr);
     margin-block: 16px;
 }
 .prs-hero-section-wrapper .prs-hero-text-wrapper .prs-hero-title-wrapper .prs-hero-desc{
-    font-size: 18px;
+    font-size: 17px;
     line-height: 27px;
     font-weight: 500;
     color: var(--prs-black-clr);
